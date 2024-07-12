@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying Birds Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <h1>Welcome to Flying Birds Website</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home" id="homeBtn">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" id="aboutBtn">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#member" id="memberBtn">Member</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" id="contactBtn">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <section id="home" class="fade-in mb-5">
+            <h2 class="text-primary">Home</h2>
+            <p class="welcome-text bg-light p-3 rounded shadow-sm">ようこそ！鹿児島の草野球チーム<span class="highlight">「フライングバーズ」</span>です！</p>
+        </section>
+        <section id="about" class="fade-in mb-5">
+            <h2 class="text-primary">About</h2>
+            <p class="about-text bg-light p-3 rounded shadow-sm">
+                基本的に、活動は <span class="highlight">日曜日</span> に行っております。<br />
+                大学１年生の際にチームを設立し、現在は卒業し県外へ就職したメンバーもおり、思うような活動は出来ていません。<br />
+                ぜひ、野球に興味のある方はContact欄のInstagramのDMまで連絡いただけると幸いです！
+            </p>
+            <figure class="text-center">
+                <img src="images/bird.jpg" class="img-fluid rounded shadow" alt="Flying Bird">
+                <figcaption class="text-muted mt-2">優勝した際の写真</figcaption>
+            </figure>
+        </section>
+        <section id="member" class="fade-in mb-5">
+            <h2 class="text-primary">Member</h2>
+            <p class="about-text bg-light p-3 rounded shadow-sm">
+                鹿児島大学、鹿児島国際大学、社会人などさまざまな部員から構成されています。がっつり野球をしてきたメンバーや、大学から野球を始めた方など、<br />
+                経験の有無問わず、野球というスポーツを楽しんでいます。
+            </p>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <figure class="text-center">
+                        <img src="images/flying.jpg" class="img-fluid rounded shadow" alt="Flying Bird">
+                        <figcaption class="text-muted mt-2">チームのメンバーたち</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <figure class="text-center">
+                        <img src="images/team.jpg" class="img-fluid rounded shadow" alt="Team Photo">
+                        <figcaption class="text-muted mt-2">チームの集合写真</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="fade-in mb-5">
+            <h2 class="text-primary">Contact</h2>
+            <p>Instagram: <a href="https://www.instagram.com/flyin_gbirds" target="_blank" class="text-primary">@flyin_gbirds <i class="fab fa-instagram"></i></a></p>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Flying Birds</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
