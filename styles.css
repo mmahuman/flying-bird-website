@@ -1,0 +1,55 @@
+.welcome-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: skyblue;
+}
+
+.about-text {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Bootstrap customizations */
+.navbar-nav .nav-link {
+    font-size: 1.2em;
+}
+
+/* Footer adjustment */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+    width: 100%;
+}
