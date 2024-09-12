@@ -13,6 +13,13 @@
     line-height: 1.8;
 }
 
+.game-scores{
+ width:600px;
+ height:300px;
+ overflow:scroll;
+ border:white 5px solid;
+}
+
 figure img {
     max-width: 100%;
     height: auto;
