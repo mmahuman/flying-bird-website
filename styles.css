@@ -23,8 +23,8 @@
 @media (max-width: 768px) {
     .game-scores {
         width: 100%; /* 画面幅に合わせる */
-        height: 300px; /* コンテンツの高さに自動調整 */
-        overflow-y: scroll; /* 水平方向にのみスクロールを許可 */
+        max-height: 300px; /* スマホでの最大高さを設定 */
+        overflow: auto; /* 全方向にスクロールを許可 */
         border: white 3px solid; /* ボーダー幅を少し小さく */
     }
 }
