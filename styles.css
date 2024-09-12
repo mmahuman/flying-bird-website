@@ -24,7 +24,7 @@
     .game-scores {
         width: 100%; /* 画面幅に合わせる */
         height: 300px; /* コンテンツの高さに自動調整 */
-        overflow: scroll; /* 水平方向にのみスクロールを許可 */
+        overflow-y: scroll; /* 水平方向にのみスクロールを許可 */
         border: white 3px solid; /* ボーダー幅を少し小さく */
     }
 }
