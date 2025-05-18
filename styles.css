@@ -38,11 +38,16 @@
   background-color: #fff;
 }
 
-@media (max-width: 768px) {
-  .game-scores {
-    border: 3px solid rgb(139, 188, 139);
+@media (max-width: 480px) {
+  .game-scores table {
+    font-size: 0.8rem;           /* 全体フォントを小さく */
+  }
+  .game-scores th,
+  .game-scores td {
+    padding: 0.25rem;            /* セル内余白を縮小 */
   }
 }
+
 
 @keyframes fade-in {
   from { opacity: 0; }
