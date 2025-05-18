@@ -1,7 +1,7 @@
 :root {
   --primary-color: #0d6efd;
   --highlight-color: skyblue;
-  --border-color: #eee;
+  --border-color: #ccc; /* 枠線色を少し濃い目に統一 */
 }
 
 .welcome-text {
@@ -20,11 +20,10 @@
 }
 
 .table th, .table td {
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color); /* 変数を使って色を統一 */
   padding: 0.5rem;
   text-align: center;
 }
-
 
 .game-scores {
   width: 100%;
@@ -32,19 +31,34 @@
   max-height: 300px;
   overflow-y: auto;
   overflow-x: auto;
-  border: 3px solid var(--border-color);
+  border: 3px solid var(--border-color); /* 変数で統一 */
   padding: 0.5rem;
   margin: auto;
   background-color: #fff;
 }
 
 @media (max-width: 480px) {
-  .game-scores table {
-    font-size: 0.8rem;           /* 全体フォントを小さく */
+  .game-scores {
+    padding: 0.25rem;
+    border-width: 2px;
   }
+
+  .game-scores table {
+    font-size: 0.75rem;     /* フォントをさらに小さく */
+    width: 100%;            /* 幅は親要素に合わせる */
+    table-layout: fixed;    /* 列幅を均等に固定 */
+    word-wrap: break-word;  /* 長いテキストは折り返す */
+  }
+
   .game-scores th,
   .game-scores td {
-    padding: 0.25rem;            /* セル内余白を縮小 */
+    padding: 0.25rem 0.3rem;  /* セル内の余白をさらに縮小 */
+    white-space: normal;       /* 折り返し許可 */
+  }
+
+  /* テーブルの横スクロールはそのまま維持 */
+  .game-scores {
+    overflow-x: auto;
   }
 }
 
@@ -57,4 +71,3 @@
 .fade-in {
   animation: fade-in 2s ease-in-out;
 }
-
