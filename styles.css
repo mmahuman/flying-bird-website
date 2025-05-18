@@ -1,71 +1,58 @@
+:root {
+  --primary-color: #0d6efd;
+  --highlight-color: skyblue;
+  --border-color: #eee;
+}
+
 .welcome-text {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
 }
 
 .highlight {
-    color: skyblue;
+  color: var(--highlight-color);
 }
 
-.about-text {
-    margin-bottom: 20px;
-    line-height: 1.8;
+.table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.game-scores{
- width:600px;
- height:300px;
- overflow:scroll;
- border:white 5px solid;
+.table th, .table td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+
+.game-scores {
+  width: 100%;
+  max-width: 600px;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: auto;
+  border: 3px solid var(--border-color);
+  padding: 0.5rem;
+  margin: auto;
+  background-color: #fff;
 }
 
 @media (max-width: 768px) {
-    .game-scores {
-        width: 100%; /* 画面幅に合わせる */
-        max-height: 300px; /* スマホでの最大高さを設定 */
-        overflow: auto; /* 全方向にスクロールを許可 */
-        border: white 3px solid; /* ボーダー幅を少し小さく */
-    }
+  .game-scores {
+    border: 3px solid rgb(139, 188, 139);
+  }
 }
 
-figure img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-figcaption {
-    font-style: italic;
-    color: #555;
-    margin-top: 10px;
-}
-
-/* Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .fade-in {
-    animation: fadeIn 2s ease-in-out;
+  animation: fade-in 2s ease-in-out;
 }
 
-/* Bootstrap customizations */
-.navbar-nav .nav-link {
-    font-size: 1.2em;
-}
-
-/* Footer adjustment */
-footer {
-    background-color: #343a40;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: auto;
-    width: 100%;
+.text-primary a {
+  color: black;
 }
